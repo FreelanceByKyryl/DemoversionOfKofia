@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Send a message to YourCompanyName Coffee.">
+    <title>Contact — YourCompanyName</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="contact">
+
+    <div id="site-header"></div>
+
+    <main>
+        <section class="contact-hero shell reveal">
+            <p class="eyebrow">04 / SAY HELLO</p>
+            <h1>Let's talk<br><em>over coffee.</em></h1>
+            <p>Have a question, a suggestion or just want to say hello? We'd love to hear from you.</p>
+        </section>
+
+        <section class="contact-section shell">
+            <div class="contact-left reveal">
+                <div class="contact-photo">
+                    <img src="assets/coffee-moment.jpg" alt="Freshly prepared coffee" loading="lazy" decoding="async">
+                </div>
+
+                <div class="contact-copy">
+                    <p class="eyebrow">KEEP IN TOUCH</p>
+                    <h2>Good conversations<br><em>start here.</em></h2>
+                    <p>
+                        Every great conversation starts somewhere.
+                        Tell us what's on your mind and we'll be happy to hear from you.
+                    </p>
+                    <div class="contact-address">
+                        <span>FIND OUR PLACE</span>
+                        <strong>YourCompany Address</strong>
+                        <p>Your City, Your Country</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrap reveal reveal-delay">
+                <p class="eyebrow">01 / MESSAGE US</p>
+                <h2>Send a little<br><em>hello.</em></h2>
+
+                <form
+                    id="contact-form"
+                    name="contact"
+                    method="POST"
+                    action="/"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                >
+                    <input type="hidden" name="form-name" value="contact">
+
+                    <div class="honeypot">
+                        <label>Leave this empty <input name="bot-field" type="text"></label>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="full-name">Your name</label>
+                        <input
+                            id="full-name"
+                            name="name"
+                            type="text"
+                            maxlength="80"
+                            autocomplete="name"
+                            placeholder="Your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email address</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            maxlength="160"
+                            autocomplete="email"
+                            placeholder="your@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="subject">Subject</label>
+                        <input
+                            id="subject"
+                            name="subject"
+                            type="text"
+                            maxlength="100"
+                            placeholder="What would you like to ask?"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Your message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            minlength="10"
+                            maxlength="2000"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="button button-dark form-submit" id="send-button">
+                        Send message <span>↗</span>
+                    </button>
+
+                    <p class="form-status" id="form-status" role="status"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="shell">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">02 / GOOD TO KNOW</p>
+                        <h2>A few little<br><em>questions.</em></h2>
+                    </div>
+                    <p class="section-intro">Everything you might want to know before stopping by.</p>
+                </div>
+
+                <div class="faq-list reveal">
+                    <details>
+                        <summary>Where can I find YourCompanyName?</summary>
+                        <p>Find us at YourCompany Address, Your City, Your Country.</p>
+                    </details>
+
+                    <details>
+                        <summary>What are your opening hours?</summary>
+                        <p>Our example schedule is Monday to Friday 08:00–18:00, Saturday 09:00–18:00 and Sunday 09:00–17:00. These hours can be customized.</p>
+                    </details>
+
+                    <details>
+                        <summary>Can I ask a question about the menu?</summary>
+                        <p>Of course! Use the contact form above to send your question.</p>
+                    </details>
+
+                    <details>
+                        <summary>Do you offer coffee and matcha?</summary>
+                        <p>Our sample menu includes espresso, flat white, filter coffee, matcha and a few little treats.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+</body>
+</html>

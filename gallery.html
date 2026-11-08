@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A visual collection of coffee, atmosphere and details at YourCompanyName.">
+    <title>Gallery — YourCompanyName</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="gallery">
+
+    <div id="site-header"></div>
+
+    <main>
+        <section class="gallery-intro shell reveal">
+            <p class="eyebrow">03 / OUR GALLERY</p>
+            <h1>A little coffee.<br><em>A lot of feeling.</em></h1>
+            <p>
+                The details, the atmosphere and the little moments
+                that make every cup something special.
+            </p>
+        </section>
+
+        <section class="section shell gallery-section">
+            <div class="photo-grid">
+                <button class="photo-tile photo-tile-large reveal" type="button" data-lightbox aria-label="Enlarge coffee photo">
+                    <img src="assets/coffee-table.jpg" alt="Coffee drinks on a table" decoding="async">
+                    <span class="photo-overlay">VIEW PHOTO ↗</span>
+                </button>
+
+                <button class="photo-tile reveal reveal-delay" type="button" data-lightbox aria-label="Enlarge latte photo">
+                    <img src="assets/coffee-moment.jpg" alt="Freshly prepared coffee" loading="lazy" decoding="async">
+                    <span class="photo-overlay">VIEW PHOTO ↗</span>
+                </button>
+
+                <button class="photo-tile reveal" type="button" data-lightbox aria-label="Enlarge cafe interior photo">
+                    <img src="assets/coffee-counter.jpg" alt="Coffee shop counter" loading="lazy" decoding="async">
+                    <span class="photo-overlay">VIEW PHOTO ↗</span>
+                </button>
+
+                <button class="photo-tile reveal reveal-delay" type="button" data-lightbox aria-label="Enlarge artwork photo">
+                    <img src="assets/wall-art.jpg" alt="Colourful cafe wall art" loading="lazy" decoding="async">
+                    <span class="photo-overlay">VIEW PHOTO ↗</span>
+                </button>
+
+                <button class="photo-tile photo-tile-wide reveal" type="button" data-lightbox aria-label="Enlarge coffee selection photo">
+                    <img src="assets/coffee-table.jpg" alt="Selection of specialty coffee" loading="lazy" decoding="async">
+                    <span class="photo-overlay">VIEW PHOTO ↗</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="shell cta-content reveal">
+                <p class="eyebrow eyebrow-light">COFFEE · MATCHA · GOOD MOMENTS</p>
+                <h2>There is always<br><em>room for coffee.</em></h2>
+                <a class="button button-light" href="menu.html">Explore our coffee ↗</a>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="lightbox" class="lightbox" aria-label="Enlarged photo">
+        <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close photo">×</button>
+        <button type="button" class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous photo">‹</button>
+        <img id="lightbox-image" src="" alt="">
+        <button type="button" class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next photo">›</button>
+    </dialog>
+
+    <div id="site-footer"></div>
+</body>
+</html>

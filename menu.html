@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore the coffee, matcha and treats at YourCompanyName.">
+    <title>Our Menu — YourCompanyName</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="menu">
+
+    <div id="site-header"></div>
+
+    <main>
+        <section class="inner-hero shell">
+            <div class="inner-hero-text reveal">
+                <p class="eyebrow">01 / SOMETHING GOOD</p>
+                <h1>Find your<br><em>perfect cup.</em></h1>
+                <p>Carefully prepared coffee, wonderful matcha and a little something sweet to make the moment better.</p>
+            </div>
+
+            <div class="inner-hero-image reveal reveal-delay">
+                <img src="assets/coffee-table.jpg" alt="Specialty coffee drinks" decoding="async">
+            </div>
+        </section>
+
+        <section class="section shell menu-section">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">DISCOVER THE SELECTION</p>
+                    <h2>Made with <em>care.</em></h2>
+                </div>
+                <p class="section-intro">Explore the little pleasures that make every visit special.</p>
+            </div>
+
+            <div class="filter-bar" role="group" aria-label="Menu categories">
+                <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">Everything</button>
+                <button type="button" class="filter-button" data-filter="coffee" aria-pressed="false">Coffee</button>
+                <button type="button" class="filter-button" data-filter="matcha" aria-pressed="false">Matcha</button>
+                <button type="button" class="filter-button" data-filter="treats" aria-pressed="false">Treats & Beans</button>
+            </div>
+
+            <div class="menu-grid">
+                <article class="menu-card reveal" data-category="coffee">
+                    <div class="menu-image"><img src="assets/coffee-moment.jpg" alt="Coffee in a cup" loading="lazy" decoding="async"></div>
+                    <span class="menu-label">01 / COFFEE</span>
+                    <h3>Espresso</h3>
+                    <p>Rich flavour and a beautiful aroma. The classic daily ritual.</p>
+                </article>
+
+                <article class="menu-card reveal reveal-delay" data-category="coffee">
+                    <div class="menu-image"><img src="assets/coffee-table.jpg" alt="Specialty coffee drinks" loading="lazy" decoding="async"></div>
+                    <span class="menu-label">02 / COFFEE</span>
+                    <h3>Flat white</h3>
+                    <p>Balanced espresso with silky steamed milk.</p>
+                </article>
+
+                <article class="menu-card reveal" data-category="coffee">
+                    <div class="menu-image"><img src="assets/coffee-counter.jpg" alt="Coffee preparation counter" loading="lazy" decoding="async"></div>
+                    <span class="menu-label">03 / COFFEE</span>
+                    <h3>Filter coffee</h3>
+                    <p>A slower brewing ritual full of wonderful flavours.</p>
+                </article>
+
+                <article class="menu-card reveal reveal-delay" data-category="matcha">
+                    <div class="menu-image"><img src="assets/coffee-moment.jpg" alt="Cafe drink" loading="lazy" decoding="async"></div>
+                    <span class="menu-label">04 / MATCHA</span>
+                    <h3>Matcha latte</h3>
+                    <p>Something smooth and different for a peaceful afternoon.</p>
+                </article>
+
+                <article class="menu-card reveal" data-category="treats">
+                    <div class="menu-image"><img src="assets/coffee-counter.jpg" alt="Coffee bar and selection" loading="lazy" decoding="async"></div>
+                    <span class="menu-label">05 / TREATS</span>
+                    <h3>Something sweet</h3>
+                    <p>Little treats that make a coffee break even more enjoyable.</p>
+                </article>
+
+                <article class="menu-card reveal reveal-delay" data-category="treats">
+                    <div class="menu-image"><img src="assets/coffee-table.jpg" alt="Freshly served coffee" loading="lazy" decoding="async"></div>
+                    <span class="menu-label">06 / BEANS</span>
+                    <h3>Coffee at home</h3>
+                    <p>Bring the specialty coffee experience into your own kitchen.</p>
+                </article>
+            </div>
+
+            <p class="menu-note">Menu items are examples and can be customized for your business.</p>
+        </section>
+
+        <section class="cta-section">
+            <div class="shell cta-content reveal">
+                <p class="eyebrow eyebrow-light">COFFEE IS ALWAYS A GOOD IDEA</p>
+                <h2>Stay a while.<br><em>Enjoy the moment.</em></h2>
+                <a href="about.html" class="button button-light">Discover our place ↗</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+</body>
+</html>
